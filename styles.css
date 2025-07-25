@@ -127,3 +127,51 @@ footer {
     margin-bottom: 10px;
     font-size: 1rem;
 }
+#domestic-care {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 18px rgba(25, 135, 84, 0.07);
+    border-left: 6px solid #198754;
+    padding: 36px 28px;
+    margin: 32px 0;
+    transition: box-shadow 0.3s;
+}
+
+#domestic-care:hover {
+    box-shadow: 0 4px 28px rgba(25, 135, 84, 0.15);
+}
+
+#domestic-care h2 {
+    color: #176143;
+    margin-top: 0;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+#domestic-care p {
+    color: #395144;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+#domestic-care ul {
+    padding-left: 24px;
+    margin: 0;
+}
+
+#domestic-care ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    padding-left: 2px;
+    position: relative;
+}
+
+#domestic-care ul li::before {
+    content: "✔";
+    color: #198754;
+    font-size: 1rem;
+    position: absolute;
+    left: -24px;
+    top: 0;
+}
