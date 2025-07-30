@@ -107,7 +107,9 @@ section {
 
 /* Contact Section */
 #contact {
-  background: #eaffea;
+  background: 
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80') center center/cover no-repeat;
   padding: 40px 0;
 }
 
