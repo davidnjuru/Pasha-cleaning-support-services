@@ -7,6 +7,68 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+body {
+  background: #f6fff6;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #207a3c; /* A strong green */
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #b8ffb8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+section h2,
+section h3 {
+  color: #207a3c;
+}
+
+button, input[type="submit"] {
+  background: #207a3c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #185c2e;
+}
+
+footer {
+  background: #207a3c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}
   <header>
     <div class="container">
       <h1>PASHA Cleaning, Care & Support Services LTD</h1>
