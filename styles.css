@@ -2,8 +2,11 @@ body {
   background: #f6fff6;
   color: #222;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header Styling */
 header {
   background: #207a3c;
   color: #fff;
@@ -13,20 +16,32 @@ header {
 header h1 {
   margin: 0;
   color: #fff;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
+  margin: 0;
+  display: inline-flex;
   gap: 20px;
+}
+
+nav li {
+  display: inline;
 }
 
 nav a {
   color: #b8ffb8;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.08rem;
+  transition: color 0.2s;
 }
 
 nav a:hover,
@@ -35,24 +50,145 @@ nav a:focus {
   text-decoration: underline;
 }
 
+/* Container Utility */
+.container,
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Section Headings */
 section h2,
 section h3 {
   color: #207a3c;
+  margin-top: 0;
 }
 
-button, input[type="submit"] {
+section {
+  padding: 40px 0 24px 0;
+}
+
+/* Hero Section */
+#hero {
+  background: #b8ffb8;
+  padding: 48px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+/* Services Lists */
+#services ul {
+  margin-bottom: 32px;
+  padding-left: 22px;
+}
+
+/* Mission */
+.mission {
+  background: #f6fff6;
+  border-left: 4px solid #207a3c;
+  padding: 18px 20px;
+  margin-top: 18px;
+  border-radius: 8px;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #eaffea;
+  border-left: 4px solid #207a3c;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+  background: #eaffea;
+  padding: 40px 0;
+}
+
+.contact-container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(32,122,60,0.07);
+  padding: 32px;
+}
+
+#contact h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #207a3c;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#contact label {
+  font-weight: 600;
+  color: #207a3c;
+  margin-bottom: 4px;
+}
+
+#contact input,
+#contact textarea {
+  border: 1px solid #b8ffb8;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  background: #f6fff6;
+  color: #222;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #207a3c;
+  outline: none;
+}
+
+#contact button[type="submit"] {
+  margin-top: 8px;
   background: #207a3c;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
+  padding: 12px 0;
+  font-size: 1.08rem;
+  font-weight: 700;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-button:hover, input[type="submit"]:hover {
+#contact button[type="submit"]:hover {
   background: #185c2e;
 }
 
+#contact p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+#contact a {
+  color: #207a3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   background: #207a3c;
   color: #fff;
@@ -60,141 +196,26 @@ footer {
   padding: 10px 0;
   margin-top: 40px;
 }
-2. Your HTML file (no CSS in <body>)
-Link to your styles.css as you already do:
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PASHA Cleaning, Care and Support Services LTD</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>PASHA Cleaning, Care & Support Services LTD</h1>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+    max-width: 96vw;
+  }
+  .contact-container {
+    max-width: 96vw;
+  }
+}
 
-  <section id="hero">
-    <div class="container">
-      <h2>Professional Cleaning, Care, and Support Services Across the UK</h2>
-      <p>Your trusted partner for a cleaner, safer, and more comfortable environment.</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>
-        PASHA Cleaning, Care and Support Services LTD is a UK-based company dedicated to delivering exceptional domestic and care services.
-        We focus on professionalism, compassion, and reliability in all our work — whether we’re cleaning a home or supporting a client with daily care needs.
-      </p>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-
-      <h3>Domestic Cleaning</h3>
-      <ul>
-        <li>General Housekeeping (dusting, vacuuming, surface cleaning)</li>
-        <li>Deep Kitchen and Bathroom Cleaning</li>
-        <li>Window and Glass Polishing</li>
-        <li>Oven, Carpet & Upholstery Cleaning</li>
-        <li>Laundry, Ironing and Folding Services</li>
-        <li>Spring Cleaning and One-off Projects</li>
-      </ul>
-
-      <h3>Care & Support Services</h3>
-      <ul>
-        <li>Assisted Living Support for Elderly and Disabled Clients</li>
-        <li>Companionship and Wellness Visits</li>
-        <li>Meal Preparation and Medication Reminders</li>
-        <li>Assistance with Dressing, Hygiene & Mobility</li>
-        <li>Light Housekeeping & Errand Running</li>
-      </ul>
-
-      <h3>Commercial Cleaning</h3>
-      <ul>
-        <li>Office Cleaning Contracts</li>
-        <li>Retail Store Cleaning</li>
-        <li>End-of-Tenancy and Move-Out Cleaning</li>
-        <li>Care Home and Medical Facility Cleaning</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="mission">
-    <div class="container">
-      <h2>Our Mission</h2>
-      <div class="mission">
-        <p>
-          To empower individuals and families by offering high-quality, person-centered services that enhance well-being, independence, and cleanliness in every home and facility we serve.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>
-          <strong>
-            "PASHA has made such a difference in my parents’ life. Their care team is friendly, reliable, and genuinely concerned about well-being."
-          </strong>
-          <br>
-          – James K., Harlow
-        </p>
-      </div>
-      <div class="testimonial">
-        <p>
-          <strong>
-            "Their deep cleaning service exceeded our expectations. Professional from start to finish!"
-          </strong>
-          <br>
-          – Laura T., Chelmsford
-        </p>
-      </div>
-    </div>
-  </section>
-
-<section id="contact">
-  <div class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-    <p><strong>Phone:</strong> <a href="tel:+447488287260">+44 7488 287260</a></p>
-      </div>
-</section>
-
-<footer>
-    <div class="container">
-      <p>&copy; 2024 PASHA Cleaning, Care and Support Services LTD. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-container {
+    padding: 16px;
+  }
+  #hero h2 {
+    font-size: 1.25rem;
+  }
+}
