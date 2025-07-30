@@ -10,12 +10,14 @@
   <header>
     <div class="container">
       <h1>PASHA Cleaning, Care & Support Services LTD</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#mission">Mission</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -80,10 +82,10 @@
     <div class="container">
       <h2>What Our Clients Say</h2>
       <div class="testimonial">
-        <p><strong>"PASHA has made such a difference in my parents’ life. Their care team is friendly, reliable, and genuinely concerned about well-being."</strong><br>– James K., Manchester</p>
+        <p><strong>"PASHA has made such a difference in my parents’ life. Their care team is friendly, reliable, and genuinely concerned about well-being."</strong><br>– James K.,Harlow</p>
       </div>
       <div class="testimonial">
-        <p><strong>"Their deep cleaning service exceeded our expectations. Professional from start to finish!"</strong><br>– Laura T., Birmingham</p>
+        <p><strong>"Their deep cleaning service exceeded our expectations. Professional from start to finish!"</strong><br>– Laura T., Chelmsford</p>
       </div>
     </div>
   </section>
@@ -92,7 +94,7 @@
     <div class="container">
       <h2>Contact Us</h2>
       <p>Ready to book a service or request more information? We're here to help.</p>
-      <form>
+      <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required/>
 
@@ -105,8 +107,7 @@
         <button type="submit">Send Message</button>
       </form>
       <p><strong>Phone:</strong> <a href="tel:+447488287260">+44 7488 287260</a></p>
-      <p><strong>Email:</strong> <a href="mailto:info@pashaservices.co.uk">info@pashaservices.co.uk</a></p>
-    </div>
+     </div>
   </section>
 
   <footer>
