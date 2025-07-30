@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PASHA Cleaning, Care and Support Services LTD</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
 body {
   background: #f6fff6;
   color: #222;
@@ -14,7 +5,7 @@ body {
 }
 
 header {
-  background: #207a3c; /* A strong green */
+  background: #207a3c;
   color: #fff;
   padding: 20px 0;
 }
@@ -69,6 +60,18 @@ footer {
   padding: 10px 0;
   margin-top: 40px;
 }
+2. Your HTML file (no CSS in <body>)
+Link to your styles.css as you already do:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PASHA Cleaning, Care and Support Services LTD</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
   <header>
     <div class="container">
       <h1>PASHA Cleaning, Care & Support Services LTD</h1>
@@ -94,7 +97,10 @@ footer {
   <section id="about">
     <div class="container">
       <h2>About Us</h2>
-      <p>PASHA Cleaning, Care and Support Services LTD is a UK-based company dedicated to delivering exceptional domestic and care services. We focus on professionalism, compassion, and reliability in all our work — whether we’re cleaning a home or supporting a client with daily care needs.</p>
+      <p>
+        PASHA Cleaning, Care and Support Services LTD is a UK-based company dedicated to delivering exceptional domestic and care services.
+        We focus on professionalism, compassion, and reliability in all our work — whether we’re cleaning a home or supporting a client with daily care needs.
+      </p>
     </div>
   </section>
 
@@ -135,7 +141,9 @@ footer {
     <div class="container">
       <h2>Our Mission</h2>
       <div class="mission">
-        <p>To empower individuals and families by offering high-quality, person-centered services that enhance well-being, independence, and cleanliness in every home and facility we serve.</p>
+        <p>
+          To empower individuals and families by offering high-quality, person-centered services that enhance well-being, independence, and cleanliness in every home and facility we serve.
+        </p>
       </div>
     </div>
   </section>
@@ -144,10 +152,22 @@ footer {
     <div class="container">
       <h2>What Our Clients Say</h2>
       <div class="testimonial">
-        <p><strong>"PASHA has made such a difference in my parents’ life. Their care team is friendly, reliable, and genuinely concerned about well-being."</strong><br>– James K.,Harlow</p>
+        <p>
+          <strong>
+            "PASHA has made such a difference in my parents’ life. Their care team is friendly, reliable, and genuinely concerned about well-being."
+          </strong>
+          <br>
+          – James K., Harlow
+        </p>
       </div>
       <div class="testimonial">
-        <p><strong>"Their deep cleaning service exceeded our expectations. Professional from start to finish!"</strong><br>– Laura T., Chelmsford</p>
+        <p>
+          <strong>
+            "Their deep cleaning service exceeded our expectations. Professional from start to finish!"
+          </strong>
+          <br>
+          – Laura T., Chelmsford
+        </p>
       </div>
     </div>
   </section>
@@ -169,7 +189,7 @@ footer {
         <button type="submit">Send Message</button>
       </form>
       <p><strong>Phone:</strong> <a href="tel:+447488287260">+44 7488 287260</a></p>
-     </div>
+    </div>
   </section>
 
   <footer>
